@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Session 2</title>
+ </head>
+ <body>
+    <h2>Contact Session 2</h2>
+    <hr>
+    <p>Please fill out the form below to get in touch with us.</p>
+
+    <form action="contact.html" autocomplete="off" method="post">
+        <fieldset>
+            <legend> <b>Contact Form</b> </legend>
+
+        <div>
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" pattern="[A-Za-z\s]+" placeholder="Your First Name" required>
+        </div>
+
+        <div>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" pattern="[A-Za-z\s]+" placeholder="Your Last Name" required>
+        </div>
+
+        <div>
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        </div>
+
+        <div>
+            <label for="url">Website:</label>
+            <input type="url" id="url" name="url" placeholder="https://example.com"> 
+        </div>
+
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Your Password" required>
+        </div>
+
+        <div>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" maxlength="11" pattern="01(0|1|2|5)[0-9]{8}" placeholder="011-456-7890" title="Enter only numbers" required>
+        </div>
+
+        <div>
+            <label for="ID">ID:</label>
+            <input type="text" id="ID" name="ID" minlength="11" maxlength="14"  title="Enter only numbers" placeholder="Your ID" required>
+        </div>
+
+        <div>
+            <label for="convenoration">Conversation:</label>
+            <input type="text" id="convenoration" name="convenoration" placeholder="Assiut" disabled required>      
+        </div>
+
+        <div>
+            <label for="age">Your Age:</label>
+            <input type="number" id="age" name="age" min="18" max="40" placeholder="Your Age" required>
+        </div>
+
+        <div>
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <label for="LAN">Languages:</label>
+            <input type="checkbox" id="1" name="HTML" value="HTML">
+            <label for="1">HTML</label>
+            <input type="checkbox" id="2" name="CSS" value="CSS">
+            <label for="2">CSS</label>
+            <input type="checkbox" id="3" name="JavaScript" value="JavaScript">
+            <label for="3">JavaScript</label>
+        </div>
+
+        <div>
+            <label for="course" >Course:</label>
+            <select id="course" name="course">
+                <option value="" disabled selected>Select a course</option>
+                <option value="web">Web Development</option>
+                <option value="mobile">Mobile Development</option>
+                <option value="data">Data Science</option>
+            </select>
+
+        </div>
+
+        <label for="month">Select a month:</label>
+        <input list="months" id="month" name="month" placeholder="Select a month">
+        <datalist id="months">
+            <option value="January"></option>
+            <option value="February"></option>
+            <option value="March"></option>
+            <option value="April"></option>
+            <option value="May"></option>
+            <option value="June"></option>
+            <option value="July"></option>
+            <option value="August"></option>
+            <option value="September"></option>
+            <option value="October"></option>
+            <option value="November"></option>
+            <option value="December"></option>
+        </datalist>
+
+        <div>
+            <label for="date" >Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+
+        <div>
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time">
+        </div>
+
+        <div>
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="color" name="color">
+        </div>
+
+        <div>
+            <label for="range">Range:</label>
+            <input type="range" id="range" name="range" min="0" max="100">
+        </div>
+
+        <div>
+            <label for="image" >Select a file:</label>
+            <input type="file" id="file" name="file" accept="image/png ">
+        </div>
+
+        <div>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Your message here..."></textarea>
+        </div>
+
+        <input type="submit" value="Submit">
+        <button type="reset">Reset</button>
+
+    </form>
+    <br>
+    <br>
+    <a href="index.html">Back to Session 2</a>
+    <h2>
+       <a href="about.html">About</a>
+    </h2>
+
+ </body>
+</html>
