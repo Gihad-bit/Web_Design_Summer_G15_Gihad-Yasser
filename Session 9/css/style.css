@@ -1,0 +1,40 @@
+.navbar{
+    background-color: rgba(0,0,0,0.1); 
+    z-index: 999999;
+}
+.bg-img {
+    background-image: url("../imge/0.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.bg-color {
+    background-color: #101a2d;
+}
+.contact-form {
+    max-width: 600px;
+}
+.contact-form .form-control {
+    font-size: 10px;
+}
+.contact-form textarea {
+    resize: none;
+}
+ 
+
+
+
+
+@media (max-width: 767.98px) {
+    .contact-form {
+        max-width: 100%;
+    }
+}
+@media (max-width: 767.98px) {
+    .border {
+        border: none  !important;
+    }
+    .view-more {
+        display: none  !important;
+    }
+}
